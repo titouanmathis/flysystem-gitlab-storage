@@ -308,7 +308,8 @@ class GitlabAdapter extends AbstractAdapter
         }
     
         $metadata[ 'mimetype' ] = MimeType::detectByFilename($path);
-    
+        $metadata[ 'type' ] = 'file';
+
         return $metadata;
     }
     
